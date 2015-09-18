@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>首页</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" type="text/css" href="css/public.css" />
+<link rel="stylesheet" href="iconfont/iconfont.css">
+<link rel="stylesheet" href="css/swiper.min.css">
+<style>
+	.swiper-container {
+	  height: 190px;
+	}
+	i.iconfont{font-size: 26px;color:#fff;}
+	.head{background-color: #2E9CFF;width:100%;height:50px; text-align: center;position: fixed;top: 0;z-index: 100;}
+	.head img{width: 165px;height: 30px;margin-top: 10px;}
+	
+	.mask{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        right: 0px;
+        background: rgba(0,0,0,0.8);
+        z-index: 1000; 
+        display: none;
+    }
+    .find{
+        /*border: 1px solid red;*/
+        width: 290px;
+        padding: 5px;
+        position: relative;
+        margin:15px auto;
+    }
+    .find form.findform{margin:0;padding:0;text-align: left;}
+    .find .findinput{
+        width:186px;
+        height: 40px;
+        float: left;
+        border-radius: 0px;
+        border:2px solid #2E9CFF;
+    }
+     .find .photo{
+        position: absolute;
+        top: 10px;
+        left: 154px;
+        /*border: 1px solid red;*/
+        width: 30px;
+        z-index:10;
+        height: 30px;
+        color:#929292;
+    }
+    .find .abutton{
+        width: 86px;
+        height: 40px;
+        float: left;
+        background-color: #2E9CFF;
+      /*  text-align: center;
+        margin-top: 15px;
+        margin-bottom: 20px;*/
+    }
+    .abutton .ichaxun{
+        font-size: 18px; 
+        float: left;
+        padding-left: 15px;
+        line-height: 40px;
+    }
+
+    .abutton .fbutton{
+        line-height: 40px;
+        font-size: 16px;
+        color: white;
+    }
+    .popfra{
+          display: none; 
+           /* border: 1px solid red; */
+           width: 180px;
+           height: 45px;
+           background-color: #040404;
+           opacity: 0.8;
+           -moz-opacity: 0.8;
+           border-radius: 10px;
+           -moz-box-shadow: 10px 10px 15px #000;
+           box-shadow: 2px 2px 17px 0px #FFF;
+           z-index: 1500;
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           margin-left: -90px;
+           margin-top: -60px;
+           color: white;
+           font-size: 15px;
+           line-height: 45px;
+           text-align: center;
+    }
+    .waybill{
+        border-radius: 10px;
+        background: #fff;
+        padding: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        position: fixed;
+        width: 90%;
+        left: 50%;
+        margin-left: -45%;
+        top: 40%;
+    }
+    .closediv{
+        width: 38px;
+        height: 38px;
+        border-radius:19px;
+        background: #fff;
+        position: absolute;
+        right: -4px;
+        top: -7px;
+        z-index: 1100;
+    }
+    .closediv .close{
+       color: #2E9CFF;
+       font-size: 34px;
+       position: absolute;
+       top: 1px;
+       right: 2px;
+    }
+</style>
+</head>
+<body>
+<header class="head fixed">
+    <img src="images/logo.jpg"  alt="logo">
+</header>
+<!-- Swiper -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/img1.jpg" alt="" width="100%" height="100%"></div>
+        <div class="swiper-slide"><img src="images/img2.jpg" alt="" width="100%" height="100%"></div>
+        <div class="swiper-slide"><img src="images/img3.jpg" alt="" width="100%" height="100%"></div>
+        <div class="swiper-slide"><img src="images/img4.jpg" alt="" width="100%" height="100%"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+<!-- Swiper -->
+<!-- 查询 -->
+<div class="find flex" id="divfind">
+    <form method="POST" class="findform" name="findform" action="">
+        <div class="qtext">
+             <input type="text" name="findinput"  class="findinput" id="fdinput" placeholder="请输入12位运单号">
+             <i class="iconfont photo" id="photo">&#x1608;</i>
+        </div>
+       <!--  <div class="photo"></div> -->
+        <div class="abutton" id="fdbutton" >
+            <i class="iconfont ichaxun" id="ichaxun">&#x1608;</i>
+         <!--    <input type="button" class="fbutton" value="查询"> -->
+            <a class="fbutton">查询</a>
+        </div>       
+    </form>
+</div>
+<!-- 弹出 -->
+<div id="pop" class="popfra">
+    请输入12位运单号
+</div>
+<!-- 运单查询弹出层 -->
+<div class="mask" id="divmask">
+    <div class="waybill">
+    <div class="closediv">
+        <i class="iconfont close" id="close">&#x1610;</i>
+    </div>
+            <div class="find flex">
+                <form method="POST" class="findform" name="findform" action="">
+                    <div class="qtext">
+                         <input type="text" name="findinput"  class="findinput" id="fdinput" placeholder="请输入12位运单号">
+                         <i class="iconfont photo" id="photo">&#x1608;</i>
+                    </div>
+                    <div class="abutton" id="fdbutton" >
+                        <i class="iconfont ichaxun" id="ichaxun">&#x1608;</i>
+                        <a class="fbutton">查询</a>
+                    </div>       
+                </form>
+            </div>
+    </div>
+</div>
+<!--菜单-->
+<div class="menu_top">
+	<ul class="flex menuIcon last">
+		<li class="flex_li" style="height:87px;"><a href="dumplist.php"><div class="home4"><i class="iconfont">&#x1603;</i></div><span>运单查询</span></a></li>
+		<li class="flex_li" style="height:87px;"><a href="chat.php"><div class="home3"><i class="iconfont">&#x1604;</i></div><span>回单查询</span></a></li>
+		<li class="flex_li" style="height:87px;"><a href="companyList.php"><div class="home6"><i class="iconfont">&#x1601;</i></div><span>在线下单</span></a></li>
+	</ul>
+	<ul class="flex menuIcon last">
+		<li class="flex_li" style="height:87px;"><a href="dumplist.php"><div class="home7"><i class="iconfont">&#x1600;</i></div><span>关于我们</span></a></li>
+		<li class="flex_li" style="height:87px;"><a href="chat.php"><div class="home5"><i class="iconfont">&#x1602;</i></div><span>行业加盟</span></a></li>
+		<li class="flex_li" style="height:87px;"><a href="companyList.php"><div class="home9"><i class="iconfont">&#x1605;</i></div><span>行业信息</span></a></li>
+	</ul>
+</div>
+<!--底部-->
+<nav class="navFixed flex">
+	<a href="index.php"><i class="iconfont">&#x1606;</i><div>首页</div></a>
+	<a id="foot-waybill"><i class="iconfont">&#x1608;</i><div>订单查询</div></a>
+	<a href="user.php"><i class="iconfont">&#x1609;</i><div>个人中心</div></a>
+</nav>
+</body>
+<script src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script>
+	var swiper = new Swiper('.swiper-container', {
+	    pagination: '.swiper-pagination',
+	    paginationClickable: true
+	});
+</script>
+<script>
+// 查询
+    $("#divfind #fdbutton").click(function(event){
+        var findinput = $("#fdinput").val();
+        //document.write(findinput);
+        if (findinput.length != 12) {
+            $("#pop").show().delay(1000).hide(300);
+        }else{
+            window.location.href="111.html";
+        }
+    });
+
+//运单查询
+    //关闭
+    $("#close").click(function(){
+        $("#divmask").hide(10);
+    });
+    //弹出
+    $("#foot-waybill").click(function(){
+        $("#divmask").show();
+    });
+    //查询
+    $("#divmask #fdbutton").click(function(event){
+            var findinput = $("#fdinput").val();
+            //document.write(findinput);
+            if (findinput.length != 12) {
+                $("#pop").show().delay(800).hide(300);
+            }else{
+                window.location.href="111.html";
+            }
+    });
+</script>
+</html>

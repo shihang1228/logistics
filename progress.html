@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>订单进度</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" type="text/css" href="css/public.css" />
+<link rel="stylesheet" href="iconfont/iconfont.css">
+<style type="text/css">
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+body{background:#f2f2f2;font:12px/180% Arial, Helvetica, sans-serif, "新宋体";padding-top: 44px;}
+.h2status{border-bottom: 1px solid #000;margin-bottom: 32px;}
+.stepInfo{height: 45px;position:relative;background:#fff;margin:20px auto 0 auto;}
+.stepInfo li{float:left;width:100%;height:0.15em;background:#bbb;}
+.stepIco{border-radius:1em;padding:0.03em;background:#bbb;text-align:center;line-height:1.5em;color:#fff; position:absolute;width:1.4em;height:1.4em;}
+.stepIco1{top:-0.7em;left:13%;}
+.stepIco2{top:-0.7em;left:36%;}
+.stepIco3{top:-0.7em;left:60%;}
+.stepIco4{top:-0.7em;left:83%;}
+.stepText{color:#666;margin-top:0.2em;width:4em;text-align:center;margin-left:-1.4em;}
+/*时间轴*/
+
+
+</style>
+
+</head>
+
+<body>
+<header class="header fixed">
+	<div><a href="javascript:history.back();"><i class="iconfont">&#x1607;</i></a></div>
+	<h1>首页</h1>
+	<div><a href="index.html"><i class="iconfont">&#x1606;</i></a></div>
+</header>
+<div class="list">
+	<div class="flex col1-3">
+		<div><h2>运单号：</h2></div>
+		<div>222222222222</div>
+	</div>
+</div>
+<div class="list">
+	<!-- <h2 class="h2status">订单状态</h2> -->
+	<div class="flex stepInfo">
+		<input type="hidden" value="${detailorder.status }" id="o_status" /><!--后台传到页面的数据-->
+		<ul>
+			<li></li>
+		</ul>
+		<div class="stepIco stepIco1" id="create">1
+			<div class="stepText" id="createText">出库</div>
+		</div>
+		<div class="stepIco stepIco2" id="check">2
+			<div class="stepText" id="checkText">装出</div>
+		</div>
+		<div class="stepIco stepIco3" id="produce">3
+			<div class="stepText" id="produceText">途中</div>
+		</div>
+		<div class="stepIco stepIco4" id="delivery">4
+			<div class="stepText" id="deliveryText">签收</div>
+		</div>
+	</div>
+</div>
+<ul class="traceD list">
+	<div class="line"></div>
+	<li class="flex">
+		<div class="detail">
+			<div class="circle"></div>
+			<div class="woodDetail">
+				<div class="triangle"></div>
+				<p class="extrude">位置</p>
+				<p class="woodTime">2015-02-15</p>
+			</div>
+		</div>
+	</li>
+	<li class="flex">
+		<div class="detail">
+			<div class="circle"></div>
+			<div class="woodDetail">
+				<div class="triangle"></div>
+				<p class="address">位置</p>
+				<p class="woodTime">2015-02-15</p>
+			</div>
+		</div>
+	</li>
+	<li class="flex">
+		<div class="detail">
+			<div class="circle"></div>
+			<div class="woodDetail">
+				<div class="triangle"></div>
+				<p class="address">位置</p>
+				<p class="woodTime">2015-02-15</p>
+			</div>
+		</div>
+	</li>
+	<li class="flex">
+		<div class="detail">
+			<div class="circle"></div>
+			<div class="woodDetail">
+				<div class="triangle"></div>
+				<p class="address">位置</p>
+				<p class="woodTime">2015-02-15</p>
+			</div>
+		</div>
+	</li>
+</ul>
+<!--底部-->
+<nav class="navFixed flex">
+	<a href="index.php"><i class="iconfont">&#x1606;</i><div>首页</div></a>
+	<a id="foot-waybill"><i class="iconfont">&#x1608;</i><div>订单查询</div></a>
+	<a href="user.php"><i class="iconfont">&#x1609;</i><div>个人中心</div></a>
+</nav>
+<script src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	setTimeout("changeDivStyle();", 100); // 0.1秒后展示结果，因为HTML加载顺序，先加载脚本+样式，再加载body内容。所以加个延时
+});
+function changeDivStyle(){
+//		var o_status = $("#o_status").val();	//获取隐藏框值
+	var o_status = 2;
+	switch(o_status){	
+		case 4:
+			$('#delivery').css('background', '#DD0000');
+			$('#deliveryText').css('color', '#DD0000');
+		case 3:
+			$('#produce').css('background', '#DD0000');
+			$('#produceText').css('color', '#DD0000');
+		case 2:
+			$('#check').css('background', '#DD0000');
+			$('#checkText').css('color', '#DD0000');
+		case 1:
+			$('#create').css('background', '#DD0000');
+			$('#createText').css('color', '#DD0000');
+		
+	}
+}
+</script>
+</body>
+</html>
