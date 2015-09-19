@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>用户中心</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" type="text/css" href="css/public.css" />
+<link rel="stylesheet" href="iconfont/iconfont.css">
+</head>
+<body>
+<header class="header fixed">
+	<div><a href="javascript:history.back();"><i class="iconfont">&#x1607;</i></a></div>
+	<h1>用户中心</h1>
+	<div><a href="index.html"><i class="iconfont">&#x1606;</i></a></div>
+</header>
+<ul class="flex loginnav">
+	<li class="active"><div class="triangle"></div>用户登录</li>
+	<li>用户注册<div class="triangle hide"></div></li>
+</ul>
+<div class="content">
+	<div class="signin">
+		<form action="" method="POST">
+			<div class="flex col1-3">
+				<div class="label">用户名：</div>
+				<div class="divinput"><input type="text" class="formcontrol" placeholder="请输入您的用户名"></div>
+			</div>
+			<div class="flex col1-3">
+				<div class="label">密码：</div>
+				<div class="divinput"><input type="password" class="formcontrol" placeholder="请输入密码"></div>
+			</div>
+			<input type="button" value="登录" />
+		</form>
+	</div>
+	<div class="signup hide">
+		<form action="" method="POST">
+			<div class="flex col1-3">
+				<div class="label">用户名：</div>
+				<div class="divinput"><input type="text" class="formcontrol" placeholder="请输入您的用户名"></div>
+			</div>
+			<div class="flex col1-3">
+				<div class="label">密码：</div>
+				<div class="divinput"><input type="password" class="formcontrol" placeholder="请输入密码"></div>
+			</div>
+			<div class="flex col1-3">
+				<div class="label">确认密码：</div>
+				<div class="divinput"><input type="password" class="formcontrol" placeholder="请确认密码"></div>
+			</div>
+			<div class="flex col1-3">
+				<div class="label">手机：</div>
+				<div class="divinput"><input type="tel" class="formcontrol" placeholder="请输入您的手机"></div>
+			</div>
+			<input type="button" value="注册" />
+		</form>
+	</div>
+</div>
+<!--底部-->
+<nav class="navFixed flex">
+	<a href="index.php"><i class="iconfont">&#x1606;</i><div>首页</div></a>
+	<a id="foot-waybill"><i class="iconfont">&#x1608;</i><div>订单查询</div></a>
+	<a href="user.php"><i class="iconfont">&#x1609;</i><div>个人中心</div></a>
+</nav>
+<script src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
+<script>
+	$(function(){
+		$("body").on("click",".loginnav li",function(){
+			var index = $(this).index();
+			$(this).find(".triangle").show();
+			$(this).siblings().find(".triangle").hide();
+			$(this).addClass("active").siblings().removeClass("active");
+			if(index == 0){
+				$(".signup").hide();
+				$(".signin").show();
+			}else if(index == 1){
+				$(".signin").hide();
+				$(".signup").show();
+			}
+		})
+	})
+</script>
+</body>
+</html>

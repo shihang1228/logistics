@@ -13,27 +13,6 @@
         <ul class="icon_lists clear">
             
                 <li>
-                <i class="icon iconfont">&#x1619;</i>
-                    <div class="name">服务</div>
-                    <div class="code">&amp;#x1619;</div>
-                    <div class="fontclass">.fuwu</div>
-                </li>
-            
-                <li>
-                <i class="icon iconfont">&#x1618;</i>
-                    <div class="name">设置</div>
-                    <div class="code">&amp;#x1618;</div>
-                    <div class="fontclass">.shezhi</div>
-                </li>
-            
-                <li>
-                <i class="icon iconfont">&#x1621;</i>
-                    <div class="name">删除</div>
-                    <div class="code">&amp;#x1621;</div>
-                    <div class="fontclass">.shanchu</div>
-                </li>
-            
-                <li>
                 <i class="icon iconfont">&#x1608;</i>
                     <div class="name">查询</div>
                     <div class="code">&amp;#x1608;</div>
@@ -48,24 +27,10 @@
                 </li>
             
                 <li>
-                <i class="icon iconfont">&#x1615;</i>
-                    <div class="name">我的寄件</div>
-                    <div class="code">&amp;#x1615;</div>
-                    <div class="fontclass">.unie665</div>
-                </li>
-            
-                <li>
                 <i class="icon iconfont">&#x1603;</i>
                     <div class="name">库存查询</div>
                     <div class="code">&amp;#x1603;</div>
                     <div class="fontclass">.kucunchaxun01</div>
-                </li>
-            
-                <li>
-                <i class="icon iconfont">&#x1613;</i>
-                    <div class="name">收件箱</div>
-                    <div class="code">&amp;#x1613;</div>
-                    <div class="fontclass">.shoujianxiang</div>
                 </li>
             
                 <li>
@@ -80,27 +45,6 @@
                     <div class="name">个人中心</div>
                     <div class="code">&amp;#x1609;</div>
                     <div class="fontclass">.gerenzhongxin</div>
-                </li>
-            
-                <li>
-                <i class="icon iconfont">&#x1620;</i>
-                    <div class="name">下拉</div>
-                    <div class="code">&amp;#x1620;</div>
-                    <div class="fontclass">.xiala</div>
-                </li>
-            
-                <li>
-                <i class="icon iconfont">&#x1622;</i>
-                    <div class="name">修改</div>
-                    <div class="code">&amp;#x1622;</div>
-                    <div class="fontclass">.xiugai</div>
-                </li>
-            
-                <li>
-                <i class="icon iconfont">&#x1614;</i>
-                    <div class="name">左侧-优惠券</div>
-                    <div class="code">&amp;#x1614;</div>
-                    <div class="fontclass">.zuoceyouhuiquan</div>
                 </li>
             
                 <li>
@@ -125,13 +69,6 @@
                 </li>
             
                 <li>
-                <i class="icon iconfont">&#x1616;</i>
-                    <div class="name">红包</div>
-                    <div class="code">&amp;#x1616;</div>
-                    <div class="fontclass">.hongbao</div>
-                </li>
-            
-                <li>
                 <i class="icon iconfont">&#x1602;</i>
                     <div class="name">招商加盟 (下)</div>
                     <div class="code">&amp;#x1602;</div>
@@ -153,31 +90,10 @@
                 </li>
             
                 <li>
-                <i class="icon iconfont">&#x1617;</i>
-                    <div class="name">积分</div>
-                    <div class="code">&amp;#x1617;</div>
-                    <div class="fontclass">.jifen</div>
-                </li>
-            
-                <li>
                 <i class="icon iconfont">&#x1605;</i>
                     <div class="name">行业常识</div>
                     <div class="code">&amp;#x1605;</div>
                     <div class="fontclass">.xingyechangshi</div>
-                </li>
-            
-                <li>
-                <i class="icon iconfont">&#x1612;</i>
-                    <div class="name">门店地址</div>
-                    <div class="code">&amp;#x1612;</div>
-                    <div class="fontclass">.mendiandizhi</div>
-                </li>
-            
-                <li>
-                <i class="icon iconfont">&#x1623;</i>
-                    <div class="name">新增</div>
-                    <div class="code">&amp;#x1623;</div>
-                    <div class="fontclass">.xinzeng</div>
                 </li>
             
         </ul>

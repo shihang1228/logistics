@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>用户中心</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" type="text/css" href="css/public.css" />
+<link rel="stylesheet" href="iconfont/iconfont.css">
+<style>
+body{
+    background-color: #ececec;
+}
+/*nopera*/
+.nopera{
+    /*border: 1px solid red;*/
+    height: 120px;
+    background-image: url(images/bg.jpg);
+    background-size:cover;
+    -moz-background-size: cover;
+    text-align: center;
+}
+.nopera .descri{
+    font-size: 14px;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.nopera .nop-button{
+    border: 1px solid #fff;
+    width:90px;
+    height: 35px;
+    border-radius:3px; 
+    margin-left: 33%;
+    z-index: 1200;
+}
+.nopera .sign{
+    line-height: 33px;
+    color: #fff;
+    font-size: 16px;
+}
+.nopera .signed{
+    display: none;
+}
+/*积分红包优惠券*/
+.flex{
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+}
+.flex .math{
+    border-right: 1px solid #ccc;
+}
+.flex .math-left{
+    float: left;
+    font-size: 33px;
+    color: red;
+    padding: 15px 0px 15px 10px;
+}
+.flex .math-right{
+    float: left;
+    padding:15px 0px 15px 10px;
+    font-size: 14px;
+}
+.flex .right-fixed{
+    color: #999595;
+    padding-top: 5px;
+}
+/*栏*/
+.fibar{
+    background-color: #fff;   
+    margin-top: 15px;
+}
+.fibar ul{
+    border-top:1px solid #ccc;
+    column-count: 3;
+}
+.fibar ul .left,.center{
+    float: left;
+}
+.fibar ul li{
+    height: 60px;
+    line-height: 60px;
+    padding-left: 15px;
+}
+.fibar .left-icon{
+    font-size: 30px;
+    color: #4E5050;
+}
+.fibar .right-icon{
+    float: right;
+    padding-right: 8px;
+    font-size: 12px;
+    color: #9d9797;
+}
+</style>
+</head>
+
+<body>
+<header class="header fixed">
+    <div><a href="javascript:history.back();"><i class="icon-arrow-back"></i></a></div>
+    <h1>首页</h1>
+    <div><a href="index.php"><i class="icon-home"></i></a></div>
+</header>
+<!-- bg nopera -->
+ <div class="nopera">
+    <p class="descri">绑定或注册华夏速达会员，尽享更多会员权益</p>
+    <div class="nop-button">
+        <a class="sign" href="index.html">登&nbsp;&nbsp;录</a>
+        <a class="signed" href="javascript:void(0)">用户名</a>
+    </div>
+</div>
+<!-- 积分红包优惠券 -->
+<div class="flex">
+    <div class="math">
+        <i class="iconfont math-left">&#x1617;</i>
+        <div class="math-right">
+             <p>0</p>
+             <p class="right-fixed">积分</p>
+        </div>
+    </div>
+    <div class="math">
+         <i class="iconfont math-left">&#x1616;</i>
+         <div class="math-right">
+              <p>0元</p>
+              <p class="right-fixed">红包</p>
+         </div>
+    </div>
+    <div class="math">
+        <i class="iconfont math-left">&#x1614;</i>
+        <div class="math-right">
+             <p>0张</p>
+             <p class="right-fixed">优惠券</p>
+        </div>
+    </div>
+</div>
+<!-- 栏 -->
+<div class="fibar">
+    <a href="index.html">
+        <ul class="receive">
+            <li class="left">
+                <div class="block blockrec">
+                    <i class="iconfont left-icon">&#x1613;</i>
+                </div>
+            </li>
+            <li class="center">订单管理</li>
+            <li class="right">
+                <i class="iconfont right-icon">&#x1620;</i>
+            </li>
+        </ul>
+    </a>
+    <a href="index.html">
+    <ul class="send">
+        <li class="left">
+            <div class="block blockse">
+                <i class="iconfont left-icon">&#x1615;</i>
+            </div>
+        </li>
+        <li class="center">在线下单</li>
+        <li class="right">
+            <i class="iconfont right-icon">&#x1620;</i>
+        </li>
+    </ul>
+    </a>
+    <a href="index.html">
+    <ul class="addres">
+        <li class="left">
+            <div class="block blockadd">
+                <i class="iconfont left-icon">&#x1612;</i>
+            </div>
+        </li>
+        <li class="center">地址管理</li>
+        <li class="right">
+            <i class="iconfont right-icon">&#x1620;</i>
+        </li>
+    </ul>
+    </a>
+    <!--<a href="index.html">
+    <ul class="set">
+        <li class="left">
+            <div class="block blockset">
+                <i class="iconfont left-icon">&#x1618;</i>
+            </div>
+        </li>
+         <li class="center">设置</li>
+        <li class="right">
+            <i class="iconfont right-icon">&#x1620;</i>
+        </li>
+    </ul>
+    </a>
+    <a href="index.html">
+    <ul class="servic">
+        <li class="left">
+            <div class="block blockser">
+                <i class="iconfont left-icon">&#x1619;</i>
+            </div>
+        </li>
+        <li class="center">服务</li>
+        <li class="right">
+            <i class="iconfont right-icon">&#x1620;</i>
+        </li> 
+    </ul>
+    </a>-->
+</div>
+</body>
+</html>

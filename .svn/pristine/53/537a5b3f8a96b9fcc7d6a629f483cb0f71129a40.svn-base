@@ -27,13 +27,6 @@
                 </li>
             
                 <li>
-                <i class="icon iconfont">&#x1621;</i>
-                    <div class="name">删除</div>
-                    <div class="code">&amp;#x1621;</div>
-                    <div class="fontclass">.shanchu</div>
-                </li>
-            
-                <li>
                 <i class="icon iconfont">&#x1608;</i>
                     <div class="name">查询</div>
                     <div class="code">&amp;#x1608;</div>
@@ -87,13 +80,6 @@
                     <div class="name">下拉</div>
                     <div class="code">&amp;#x1620;</div>
                     <div class="fontclass">.xiala</div>
-                </li>
-            
-                <li>
-                <i class="icon iconfont">&#x1622;</i>
-                    <div class="name">修改</div>
-                    <div class="code">&amp;#x1622;</div>
-                    <div class="fontclass">.xiugai</div>
                 </li>
             
                 <li>
@@ -171,13 +157,6 @@
                     <div class="name">门店地址</div>
                     <div class="code">&amp;#x1612;</div>
                     <div class="fontclass">.mendiandizhi</div>
-                </li>
-            
-                <li>
-                <i class="icon iconfont">&#x1623;</i>
-                    <div class="name">新增</div>
-                    <div class="code">&amp;#x1623;</div>
-                    <div class="fontclass">.xinzeng</div>
                 </li>
             
         </ul>

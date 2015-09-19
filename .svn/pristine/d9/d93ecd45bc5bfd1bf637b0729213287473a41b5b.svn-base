@@ -15,27 +15,15 @@
   -webkit-text-stroke-width: 0.2px;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-fuwu:before { content: "\1619"; }
-.icon-shezhi:before { content: "\1618"; }
-.icon-shanchu:before { content: "\1621"; }
 .icon-chaxun:before { content: "\1608"; }
 .icon-gongsi:before { content: "\1600"; }
-.icon-unie665:before { content: "\1615"; }
 .icon-kucunchaxun01:before { content: "\1603"; }
-.icon-shoujianxiang:before { content: "\1613"; }
 .icon-shouyeicon:before { content: "\1606"; }
 .icon-gerenzhongxin:before { content: "\1609"; }
-.icon-xiala:before { content: "\1620"; }
-.icon-xiugai:before { content: "\1622"; }
-.icon-zuoceyouhuiquan:before { content: "\1614"; }
 .icon-xiadan:before { content: "\1601"; }
 .icon-fanhui:before { content: "\1607"; }
 .icon-yundan:before { content: "\1604"; }
-.icon-hongbao:before { content: "\1616"; }
 .icon-zhaoshangjiamengxia:before { content: "\1602"; }
 .icon-zhaoxiangji:before { content: "\1611"; }
 .icon-shibai2:before { content: "\1610"; }
-.icon-jifen:before { content: "\1617"; }
 .icon-xingyechangshi:before { content: "\1605"; }
-.icon-mendiandizhi:before { content: "\1612"; }
-.icon-xinzeng:before { content: "\1623"; }
